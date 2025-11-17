@@ -26,12 +26,12 @@ jobs:
 
       - name: Configure Git identity
         run: |
-          git config --global user.name "Charan3699"
-          git config --global user.email "2300033765@kluniversity.in"
+          git config --global user.name "2300030576"
+          git config --global user.email "2300030576@kluniversity.in"
 
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install -g gh-pages
-          gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/Charan36997/Hospital_17.git
+          gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/2300030576/Hospital_17.git
